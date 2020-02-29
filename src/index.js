@@ -10,7 +10,7 @@ const carousel = new Carousel({
   interval: 2000,      // interval between slide changes
   initial: 0,          // slide to start with
   dots: true,          // show navigation dots
-  arrows: true,        // show navigation arrows
+  arrows: false,        // show navigation arrows
   buttons: false,      // hide play/stop buttons,
   btnStopText: 'Pause' // STOP button text
 });
@@ -97,7 +97,7 @@ function appendMessage(side, text) {
     </div>
   `;
   modalBody.insertAdjacentHTML("beforeend", msgHTML);
-  modalBody.scrollTop += 500;
+  // modalBody.scrollTop += 500;
 }
 
 function botResponse() {
