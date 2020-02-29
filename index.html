@@ -5,8 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="/node_modules/vanilla-js-carousel/vanilla-js-carousel.css">
+
 </head>
 <body>
+
+   <h1>Ahoy Ice Cream Shop</h1>
+
+<div class="js-Carousel" id="carousel">
+      <ul>
+          <li><img src="./images/image-1.jpg" alt="image-1"></li>
+          <li><img src="./images/image-2.jpg" alt="image-2"></li>
+          <li><img src="./images/image-3.jpg" alt="image-3"></li>
+      </ul>
+  </div>
+
+  <button id="modal-btn" class="button">Chat Here</button>
+
+    <div id="my-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Chat</h2>
+        </div>
+
+        <!-- Bot Messages -->
+        <div class="modal-body">
+          <div class="msg-bubble">
+            <div class="msg-text">
+              Hi, welcome to Scoops Ahoy! Go ahead and ask. 🍦
+            </div>
+          </div>
+
+    <!-- Your Messages -->
+      <div class="msg right-msg">
+        <div class="msg-bubble">
+          <div class="msg-text">
+            <!-- User text goes here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Input Area -->
+          <form class="msger-inputarea">
+            <input type="text" class="msger-input" placeholder="Enter your message...">
+            <button type="submit" class="msger-send-btn">Send</button>
+          </form>
+
+      </div>
+    </div>
 
   <script src="dist/main.js"></script>
 </body>
